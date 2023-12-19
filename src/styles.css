@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --geebung-50: rgb(254, 251, 232);
+    --geebung-100: rgb(253, 248, 196);
+    --geebung-200: rgb(253, 236, 139);
+    --geebung-300: rgb(251, 219, 73);
+    --geebung-400: rgb(248, 197, 23);
+    --geebung-500: rgb(232, 172, 10);
+    --geebung-600: rgb(210, 139, 6);
+    --geebung-700: rgb(160, 94, 8);
+    --geebung-800: rgb(132, 74, 15);
+    --geebung-900: rgb(112, 61, 19);
+    --geebung-950: rgb(65, 31, 7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
