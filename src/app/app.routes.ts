@@ -1,19 +1,16 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { HomePageComponent } from './pages/blog/home-page/home-page.component';
+import { AboutPageComponent } from './pages/blog/about-page/about-page.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
     {
         path:'',
-        redirectTo:'/home',
-        pathMatch: 'full'
+        redirectTo:'/blog/home',
+        pathMatch:'full'
     },
     {
-        path:'home',
-        component:HomePageComponent
-    },
-    {
-        path:'about',
-        component:AboutPageComponent
+        path:'blog',
+        loadChildren: () => import('./pages/blog/blog.module').then(m=>m.BlogModule)
     }
 ];

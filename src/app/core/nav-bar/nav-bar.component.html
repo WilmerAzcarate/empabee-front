@@ -1,72 +1,65 @@
 <nav class="navbar navbar-expand-md sticky-top" style="background-color: rgb(252, 252, 252,.5);">
-    <div class="container-fluid d-flex col-12 col-sm-12 col-md-12 col-lg-11">
+  <div class="container-fluid d-flex col-12 col-sm-12 col-md-12 col-lg-12">
+    
+    <a class="navbar-brand d-flex col-5 col-sm-3 col-md-3 col-lg-4 align-items-center flex-column" routerLink="/blog/home">
+      <img [src]="logo" alt="Logo" width="160" height="80" class="d-inline-block align-text-top">
+ 
 
-      <a class="navbar-brand d-flex col-5 col-sm-3 col-md-3 col-lg-4 align-items-center flex-column " routerLink="/"  routerLinkActive="active">
-        <img [src]="logo" alt="Logo" width="140" height="80" class="d-inline-block align-text-top">
-      </a>
-      <!-- icno que aparece en movil -->
-      <div class="store-lista  col-2 col-sm-6 d-md-none ">
-        <li class="store-icon d-flex justify-content-end align-items-center dropdown list-unstyled">
-          <a class="icon-link icon-link-hover " style="--bs-icon-link-transform: translate3d(.125rem, 0, 0);" href="#">
-            <i class="bi bi-cart-fill "></i>
+    </a>
+    <!-- icno que aparece en movil -->
+    <div class="store-lista  col-2 col-sm-6 d-md-none ">
+      <li class="store-icon d-flex justify-content-end align-items-center dropdown list-unstyled">
+        <a class="icon-link icon-link-hover " style="--bs-icon-link-transform: translate3d(.125rem, 0, 0);"
+          href="#">
+          <i class="bi bi-cart-fill "></i>
+        </a>
+      </li>
+    </div>
+    <!-- icno que aparece en movil end-->
+    <div class="col-3 col-sm-2 d-md-none">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+
+    <div class="collapse navbar-collapse justify-content-between col-md-9 col-lg-8" id="navbarNavDropdown">
+      <ul class="navbar-nav col-md-7 col-lg-9 ">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog/about">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Habitaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reservas</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav align-items-center col-md-5  col-lg-3 ">
+        <li class="nav-item dropdown list-unstyled ">
+
+          <button class="btn btn-outline-warning mt-2 " type="submit">Contactar</button>
+        </li>
+        <li class="store-icon2 dropdown list-unstyled">
+          <a class="icon-link icon-link-hover me-2 " href="#">
+            <i class="bi bi-cart-fill mb-2"></i>
           </a>
         </li>
-      </div>
-      <!-- icno que aparece en movil end-->
-      <div class="col-3 col-sm-2 d-md-none">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person-circle "></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end drop">
+            <li><a class="dropdown-item" href="recepcionista.html">Administrador</a></li>
+            <li><a class="dropdown-item" href="#">Gerente</a></li>
+            <li><a class="dropdown-item" href="login.html">recepcion</a></li>
+          </ul>
+        </li>
+      </ul>
 
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-
-
-      <div class="collapse navbar-collapse justify-content-between col-md-9 col-lg-8" id="navbarNavDropdown">
-        <ul class="navbar-nav col-md-7 col-lg-9 ">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Suscripciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/about" routerLinkActive="active">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Plataforma</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Productos
-            </a>
-            <ul class="dropdown-menu ">
-              <li><a class="dropdown-item" href="recepcionista.html">Sensor de PH </a></li>
-              <li><a class="dropdown-item" href="#">Sensor de Humedad</a></li>
-              <li><a class="dropdown-item" href="#">Sensor de Peso</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="navbar-nav align-items-center col-md-5  col-lg-3 ">
-          <li class="nav-item dropdown list-unstyled ">
-
-            <button class="btn btn-outline-warning mt-2 " type="submit">Contactar</button>
-          </li>
-          <li class="store-icon2 dropdown list-unstyled">
-            <a class="icon-link icon-link-hover me-2 " href="#">
-              <i class="bi bi-cart-fill mb-2"></i>
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="login.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-person-circle "></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end drop">
-              <li><a class="dropdown-item" href="recepcionista.html">Administrador</a></li>
-              <li><a class="dropdown-item" href="#">Gerente</a></li>
-              <li><a class="dropdown-item" href="login.html">recepcion</a></li>
-            </ul>
-          </li>
-        </ul>
-
-      </div>
     </div>
-  </nav>
+  </div>
+</nav>

@@ -9,6 +9,6 @@ export class NavBarComponent {
   logo:string;
 
   constructor(){
-    this.logo = "/assets/images/L_EmpaBee.png";
+    this.logo = "/assets/images/logos/logo_empabee_2.png";
   }
 }
