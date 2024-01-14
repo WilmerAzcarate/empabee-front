@@ -1,0 +1,33 @@
+<main>
+    <div class="container col-11 col-md-9" id="form-container">
+        <div class="row align-items-center gx-5">
+            <div class="col-md-6 order-md-2 d-flex flex-column align-items-center ">
+                <h1>Login</h1>
+                <form [formGroup]="loginForm">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Digite seu e-mail" formControlName="email">
+                        <label for="email" class="form-label">Digite su e-mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control"  id="password" name="password"
+                            placeholder="Digite su contraseña" formControlName="password">
+                        <label for="password" class="form-label">Digite su contraseña</label>
+                    </div>
+                    <div class="btn-submit d-flex justify-content-center">
+                        <button class="btn btn-primary border-0" [disabled]="loginForm.invalid" (click)="login()">Entrar</button>
+                    </div>
+                    <div class="col-12 d-flex flex-column" id="link-container">
+                        <a href="./reset.html" id="reset">Olvidaste tu contraseña? Haga clic aquí</a>
+                        <a href="./register.html" id="register">¿Aún no tienes una cuenta? Registrar aquí</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="col-12">
+                    <img src="/assets/images/resources/access_account.svg" alt="Entar no sistema" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

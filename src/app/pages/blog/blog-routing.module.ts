@@ -3,7 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { environment } from '../../../environments/environment';
 
+const BLOG_TITLE:string = environment.appName;
 const routes: Routes = [
   {
     path: '',
@@ -17,16 +19,12 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomePageComponent,
-        data: {
-          title: 'Home'
-        }
+        title:BLOG_TITLE+' - Home'
       },
       {
         path:'about',
         component:AboutPageComponent,
-        data:{
-          title:'About'
-        }
+        title:BLOG_TITLE+' - About'
       }
     ]
   }

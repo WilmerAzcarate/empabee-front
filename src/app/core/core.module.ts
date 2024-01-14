@@ -4,8 +4,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   exports:[
     NavBarComponent,
@@ -18,6 +16,6 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule
-  ]
+  ],
 })
 export class CoreModule { }

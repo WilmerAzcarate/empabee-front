@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute,RouterModule, RouterOutlet } from '@angular/router';
-import { CoreModule } from './core/core.module';
-import { Title } from '@angular/platform-browser';
+import { CoreService } from './shared/services/core.service';
 
 @Component({
   selector: 'app-root',
@@ -15,20 +14,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  {
 
-  constructor(
-    private titleService: Title,
-    private route: ActivatedRoute,
-  ){}
-
-  ngOnInit(): void {
-    this.route.data.subscribe(
-      (data)=>{
-        const title = data['title'];
-        console.log(data['title']);
-      this.titleService.setTitle(title);
-      }
-    );
-  }
+ 
 }

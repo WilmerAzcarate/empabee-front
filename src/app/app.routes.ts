@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 
 export const routes: Routes = [
     {
-        path:'',
-        redirectTo:'/blog/home',
-        pathMatch:'full'
+        path: '',
+        redirectTo: '/blog/home',
+        pathMatch: 'full'
     },
     {
-        path:'blog',
-        loadChildren: () => import('./pages/blog/blog.module').then(m=>m.BlogModule)
-    }
+        path: 'auth',
+        loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)
+    },
+    {
+        path: 'blog',
+        loadChildren: () => import('./pages/blog/blog.module').then(m => m.BlogModule)
+    },
 ];

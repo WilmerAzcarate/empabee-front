@@ -1,0 +1,11 @@
+html{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #F9F9F9;
+    color: var(--black);
+}

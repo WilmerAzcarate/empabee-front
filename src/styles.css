@@ -11,9 +11,17 @@
     --geebung-800: rgb(132, 74, 15);
     --geebung-900: rgb(112, 61, 19);
     --geebung-950: rgb(65, 31, 7);
+    --white: #FFFFFF;
+    --black: #2C3333;
+    --gray: #9BA4B5;
+    --orange: #fcba04;
+    --dark-yellow: #F7B71D;
+    --light-yellow: #FDEF96;
+    --light-orange: #F7A733;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }

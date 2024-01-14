@@ -1,1 +1,12 @@
-<p>home-page works!</p>
+<main>
+    <section class="col">
+        <h3 class="text-center ">Descanso eterno</h3>
+        <section class="row gap-1">
+            @for(info of listInfo; track info){
+                <app-info-cards [info]="info" class="col-3"></app-info-cards>
+            } @empty {
+                <strong>No hay Info</strong>
+            }
+        </section>
+    </section>
+</main>
