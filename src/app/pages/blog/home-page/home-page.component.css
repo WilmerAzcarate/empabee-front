@@ -1,0 +1,259 @@
+
+h1{
+    font-size: medium;
+  }
+  .hero{
+      min-height: 200px;
+      text-align: center;
+  }
+  
+  .texto-naranja{
+      color: var(--geebung-500);
+  } 
+  .text-portada{
+  
+  width: 25%;
+  height: 90%;
+  flex-direction: column;
+  position: absolute;
+  left: 15%;
+  top: 5%;
+  
+  font-family: 'MyFont', sans-serif;
+  font-weight: 400;
+  justify-content: start;
+  
+  
+  
+  }
+  
+  @media screen and (max-width: 576px) {
+      .text-portada-izq{
+  
+          font-size: medium;
+          
+      }
+      .text-portada{
+        left: 0;
+        
+      }
+      .text-portada h2{
+        font-size: 30px;
+      }
+  }
+  @media screen and (max-width: 576px)
+  {
+      .hero-imagen-portada{
+         display: none;
+         
+         
+      }
+      .text-portada{
+          position: relative;
+          width: 70%;
+          height: 70%;
+          right: auto;    
+          
+          background-color: rgba(235, 245, 245, 0.2);   
+      }
+  
+
+     .hero{
+     
+      height: 600px;
+     }
+  
+  }
+/* beneficios  */
+.beneficios  h2 ,.ofertas h3{
+  font-size: large;
+  color: rgb(0, 0, 0);
+}
+/* end beneficios  */
+
+/* ofertas */
+.ofertas{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--geebung-100);
+}
+.ofertas-imagenes img{
+  
+  width: 40%;
+  height: 40%;
+  max-height: 300px;
+ }
+
+
+/* ofertas(end) */
+/* estructura */
+.estructura{
+  display: flex;
+  position: relative;
+ height: 40vh;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.estructura img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: none;
+  opacity: 70%;
+  z-index: 2;
+  object-fit: contain;
+  right: 20%;
+  
+
+}
+.estructura h2{
+  position: absolute;
+  z-index: 10;
+  font-size: 2.4rem;
+  font-family: 'MyFont', sans-serif;
+  font-weight: 500;
+  color: var(--geebung-500);
+  
+}
+/* estructura end */
+/* carussel */
+/* carussel */
+.ofertas{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--geebung-100);
+}
+.ofertas-imagenes img{
+  
+  width: 40%;
+  height: 40%;
+ 
+
+ }
+
+/* carussel(end) */
+/* .....................sensores-productos......................... */
+.sensores-productos{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-image: url('/assets/images/miel11.png');
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; /
+}
+.sensores-productos img{
+  width: 300px;
+}
+.carousel-inner{
+display: flex;
+width: 60%;
+}
+.carousel{
+  display: flex;
+  justify-content: center;
+}
+.carousel-caption{
+  color: black;
+  position: unset;
+}
+.carousel-item{
+ width: 100%;
+}
+
+/* .............................contactenos.............................. */
+.contactanos{
+width: 100%;
+height: 600px;
+}
+.contactenos-contenedor1{
+  justify-content: end;
+  display: flex;
+  height: 300px;
+  
+}
+.contactenos-contenedor2{
+  display: flex;
+  
+  height: 300px;
+
+}
+.contactenos-contenedor-sub1{
+  height: 300px;
+  /* background-color: var(--geebung-200); */
+}
+.contactenos-contenedor-sub2{
+  height: 300px;
+  background-color:var(--geebung-200);
+}
+textarea, input{
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 5px;
+
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding: 20px;
+}
+.contactenos-contenedor-sub2,.contactenos-contenedor-sub1,.contactenos-contenedor1,.contactenos-contenedor2{
+  height: 90%;
+}
+
+.button-form{
+  display: flex;
+  justify-content: center;
+  
+}
+.contactenos-contenedor1{
+  position: relative;
+  
+}
+.contactenos-contenedor-sub1{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  padding-left: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  justify-content: space-between;
+  border: 2px solid var(--geebung-200);
+}
+.contactenos-contenedor-sub1 img{
+  width: 25%;
+  
+}
+.contactenos-contenedor-sub1 >div h2{
+  font-size: 1rem;
+  
+}
+.contactenos-texto,.formulario-texto{
+  font-size: 2rem;
+}
+.contactenos-contenedor-sub1 img{
+  width: 150px;
+  height: 100px;
+}
+.contactenos-contenedor-sub1 a{
+  text-decoration: none;
+  color: var(--geebung-600);
+}
+
+/*  */
+
+/* .............................contactenos(end).............................. */
+
+
+/* .....................sensores-productos (end)......................... */

@@ -1,12 +1,266 @@
-<main>
-    <section class="col">
-        <h3 class="text-center ">Descanso eterno</h3>
-        <section class="row gap-1">
-            @for(info of listInfo; track info){
-                <app-info-cards [info]="info" class="col-3"></app-info-cards>
-            } @empty {
-                <strong>No hay Info</strong>
-            }
-        </section>
-    </section>
-</main>
+<section class="hero  d-flex row">
+    <div class="hero-principal position-relative d-flex ">
+      <img [src]="portada" class="hero-imagen-portada img-fluid" alt="portada">
+  
+      <div class="text-portada d-flex rounded-4 pb-3 justify-content-center align-items-center">
+        <h2 class="text-portada-izq text-md-center mb-3">
+          <span class="texto-naranja">En cada colmena, </span>
+          <span> una historia. Monitoreamos,</span>
+          <span class="texto-naranja">cosechamos y cuidamos la vida.</span>
+  
+  
+        </h2>
+        
+        <app-mi-boton [ruta]="'/blog/about'">Explorar Ahora</app-mi-boton>
+        
+  
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  <section class="beneficios container d-flex flex-column mt-5 align-items-center">
+    <div class="titulo-funcion row   flex-column text-center">
+  
+      <h2>
+        Beneficios de reservar en
+      </h2>
+      <h2>
+        Descanso Eterno
+      </h2>
+  
+  
+    </div>
+    <div class=" categoria-funcion row mt-5 mb-5 d-flex">
+      <div class="funcion col-md-3 align-items-center d-flex flex-column text-center mt-5 mb-5">
+        <h2>Servicio Excepcional:</h2>
+        <a href="" class="justify-content-center d-flex mb-5 mt-5">
+          <i class="bi-server"></i>
+        </a>
+  
+        <h2>
+          El servicio personalizado y atento es una característica clave, con un personal altamente capacitado que se
+          esfuerza por atender las necesidades individuales de cada huésped.
+        </h2>
+      </div>
+  
+      <div class="funcion col-md-3 align-items-center d-flex flex-column text-center mt-5 mb-5">
+        <h2>Instalaciones de Alta Gama:</h2>
+        <a href="" class="justify-content-center d-flex mb-5 mt-5">
+          <i class="bi-server"></i>
+        </a>
+  
+        <h2>
+  
+          Hoteles de lujo ofrecen instalaciones de primer nivel, como spas lujosos, restaurantes gourmet y gimnasios
+          bien equipados, contribuyendo a una experiencia de alojamiento exclusiva.
+        </h2>
+      </div>
+  
+      <div class="funcion col-md-3 align-items-center d-flex flex-column text-center mt-5 mb-5">
+        <h2>Diseño y Decoración Sofisticados:</h2>
+        <a href="" class="justify-content-center d-flex mb-5 mt-5">
+          <i class="bi-server"></i>
+        </a>
+  
+        <h2>
+  
+          La elegancia y sofisticación en el diseño y la decoración de habitaciones y áreas comunes crean un ambiente
+          lujoso y acogedor.
+        </h2>
+      </div>
+  
+      <div class="funcion col-md-3 align-items-center d-flex flex-column text-center mt-5 mb-5">
+        <h2>Privacidad y Exclusividad:</h2>
+        <a href="" class="justify-content-center d-flex mb-5 mt-5">
+          <i class="bi-server"></i>
+        </a>
+  
+        <h2>
+  
+          Estos hoteles ofrecen un ambiente tranquilo y exclusivo, garantizando privacidad y seguridad, lo que
+          contribuye a una experiencia de alojamiento distinguida.
+        </h2>
+      </div>
+    </div>
+  
+  </section>
+  
+  <section class="ofertas container-fluid tamanoLetra mt-5 mb-5">
+    <div class="row">
+      <div class="ofertas col-md-6 d-flex align-items-center flex-column text-center">
+        <div class="mt-5 mb-5 ms-5 me-5">
+          <h2>Transforman tu Apicultura con EMPA-Bee</h2>
+        </div>
+        <h3 class="ms-5 me-5 mb-5">
+          Descubre el fascinante mundo de la apicultura con EMPA-Bee. Nuestro sistema monitorea variables clave en la
+          producción de miel de Apis Mellifera. A través de nuestra plataforma web y móvil, podrás seguir los cambios
+          estacionales en el panel de abejas, observando cómo afectan la productividad. Ajusta tus prácticas apícolas
+          con información detallada para mejorar la salud de tus colmenas y reducir la mortalidad durante la extracción
+          de miel. ¡Explora el Panel de Monitoreo Melífero y optimiza tus procesos apícolas con EMPA-Bee!
+        </h3>
+   
+          <app-mi-boton [ruta]="'/blog/about'">Conoce más</app-mi-boton>
+ 
+      </div>
+      <div class="ofertas-imagenes col-md-6">
+        <div class="row col-12">
+          <img src="assets/images/resources/abejaflor.jpg" class=" img-fluid col-xl-6 mb-3 " alt="...">
+  
+          <img src="assets/images/resources/colmenas1.jpg" class=" img-fluid col-xl-6 mb-3 " alt="...">
+        </div>
+        <div class="row justify-content-end">
+          <img src="assets/images/resources/colmenas2.jpg" class="img-fluid col-xl-6 " alt="...">
+          <img src="assets/images/resources/miel2.jpg" class="img-fluid col-xl-6 " alt="...">
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <section class="estructura container ">
+    <h2>Estructura de Monitoreo Productivo Apícola - Abeja</h2>
+    <img src="assets/images/resources/2.png" class="img-fluid" alt="">
+  
+  </section>
+  
+  <section class="sensores-productos container-fluid d-flex flex-column mb-5">
+  
+  
+    <div class="row mb-3 mt-5">
+      <div class="sensores-texto col-md-12 d-flex justify-content-center mt-5 mb-5">
+        <h2>Nuestros Sensores</h2>
+      </div>
+    </div>
+  
+  
+  
+    <div id="carouselExampleCaptions" class="carousel slide mt-5 mb-5">
+  
+  
+      <div class="carousel-inner">
+        <div class="carousel-item mb-5   active">
+          <img src="assets/images/resources/temperatura.png" class="sensor  img-fluid" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sensor De Temperatura Sht31</h5>
+            <p>El sensor digital de temperatura y humedad relativa SHT31 permite realizar mediciones muy precisas a bajo
+              costo. El sensor SHT31 posee mejores prestaciones respecto a los sensores DHT11 y DHT22, como mejor
+              resolución, mayor precisión y un empaque más compacto. Utilizado en aplicaciones de control automático de
+              temperatura, aire acondicionado, monitoreo ambiental en agricultura y más</p>
+            <a href="" class="justify-content-center d-flex text-decoration-none">
+              <!-- <i class="bi-server"></i> -->
+              <p>
+                Ver producto
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item mb-5">
+          <img src="assets/images/resources/dectector de ph.png" class="sensor img-fluid" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Modulo Detector Ph Ph-4502c</h5>
+            <p>El modulo sensor PH-4502C es un dispositivo que nos ayuda medir el PH con ayuda de un electrodo E201-BNC
+              para un conector BNC. Voltaje de alimentación de 5V lo cual lo hace compatible con tecnologías TTL como lo
+              es Arduino, PIC, AVR, DSP, Raspberry entre otros siempre y cuando se tenga una entrada analógica (ADC)
+              disponible.</p>
+  
+            <a href="" class="justify-content-center d-flex text-decoration-none">
+              <!-- <i class="bi-server"></i> -->
+              <p>
+                Ver producto
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item mb-5">
+          <img src="assets/images/resources/sensor peso.jpg" class="sensor img-fluid" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sensor De Fuerza Peso</h5>
+            <p>Este sensor puede medir hasta cerca de 110 libras o 55Kg. Una celda de carga es un sensor que se utiliza
+              para convertir una fuerza en una señal electrica, asi que el peso de un objeto corresponde a un
+              determinado voltaje</p>
+            <a href="" class="justify-content-center d-flex text-decoration-none ">
+              <!-- <i class="bi-server"></i> -->
+              <p>
+                Ver producto
+              </p>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  
+  
+  </section>
+  
+  <section class="contactanos container-fluid col-12 d-flex">
+    <div class="contactenos-contenedor1 col-4">
+      <div class="contactenos-contenedor-sub1 col-10 ">
+  
+        <h2 class="contactenos-texto">
+          Contacto
+        </h2>
+        <div>
+          <a href="" class=" d-flex mb-3">
+            <i class="bi-whatsapp "> +57 325 6389659</i>
+          </a>
+          <h2>
+            Empabee..gmail.com
+          </h2>
+  
+        </div>
+  
+        <img src="assets\images\logos\logo_empabee_2.png" class="img-fluid" alt="">
+  
+      </div>
+  
+    </div>
+    <div class="contactenos-contenedor2 col-8 ">
+      <div class="contactenos-contenedor-sub2 col-10">
+        <form class="formulario col-12 h-100">
+          <h2 class="formulario-texto text-center">¿Como podemos ayudarte?</h2>
+          <div class="row container">
+            <div class="nombre col-6">
+  
+              <input type="text" id="name" name="user_name" placeholder="Nombre" class="border-0" />
+            </div>
+  
+            <div class="correo col-6">
+  
+              <input type="email" id="mail" name="user_email" placeholder="Email" class="border-0" />
+            </div>
+          </div>
+          <div class="row container">
+            <div class="mensaje col-12">
+  
+              <textarea id="msg" name="user_message" placeholder="Mensaje" class="border-0"></textarea>
+            </div>
+          </div>
+          <div class="row container">
+            <div class="telefono col-6">
+  
+              <textarea id="msg" name="user_message" placeholder="Numero de Telefono" class="border-0"></textarea>
+            </div>
+          </div>
+          <div class="row container">
+  
+           
+              <app-mi-boton class="button-form">Enviar</app-mi-boton>
+         
+  
+          </div>   
+        </form>
+      </div>
+     </div>
+  </section>

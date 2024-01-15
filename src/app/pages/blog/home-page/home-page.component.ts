@@ -8,25 +8,11 @@ import { InfoCard } from '../../../shared/models/info-card.model';
 })
 export class HomePageComponent implements OnInit {
 
-  listInfo: InfoCard[];
-
+  portada: string;
   constructor() {
-    this.listInfo = [];
+    this.portada = "";
   }
-
   ngOnInit(): void {
-    this.listInfo = [
-      {
-        title: "Servicio Excepcional",
-        descripcion: "El servicio personalizado y atento es una característica clave, con un personal altamente capacitado que se esfuerza por atender las necesidades individuales de cada huésped.",
-        color:"text-danger"
-      },
-      {
-        title: "Servicio Excepcional",
-        descripcion: "El servicio personalizado y atento es una característica clave, con un personal altamente capacitado que se esfuerza por atender las necesidades individuales de cada huésped.",
-        color:"text-success"
-      },
-    ];
+    this.portada = "/assets/images/resources/portada.png";
   }
-
 }

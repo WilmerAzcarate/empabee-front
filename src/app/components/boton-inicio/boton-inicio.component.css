@@ -1,0 +1,13 @@
+.btn{
+    color: rgb(255, 255, 255);
+    border-color: #fff;
+    background-color:var(--geebung-400);
+  }
+  .btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color:var(--geebung-400);
+    border-color: transparent;
+  }
+*{
+  font-family: 'MyFont', sans-serif;
+}

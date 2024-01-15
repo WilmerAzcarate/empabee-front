@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { AboutPageComponent } from './about-page/about-page.component';
 import { environment } from '../../../environments/environment';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 
 const BLOG_TITLE:string = environment.appName;
 const routes: Routes = [
@@ -23,7 +23,7 @@ const routes: Routes = [
       },
       {
         path:'about',
-        component:AboutPageComponent,
+        component:AboutUsPageComponent,
         title:BLOG_TITLE+' - About'
       }
     ]
